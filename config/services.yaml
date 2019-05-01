@@ -4,6 +4,10 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+    POSTGRES_DB: '%env(POSTGRES_DB_NAME)%'
+    POSTGRES_USER: '%env(POSTGRES_DB_USER)%'
+    POSTGRES_PASS: '%env(POSTGRES_DB_PASS)%'
+
 
 services:
     # default configuration for services in *this* file
