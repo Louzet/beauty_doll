@@ -36,8 +36,8 @@
     </rule>
     <rule ref="Generic.Files.LineLength">
         <properties>
-            <property phpcs-only="true" name="lineLimit" value="120"/>
-            <property phpcbf-only="true" name="lineLimit" value="150"/>
+            <property phpcs-only="true" name="lineLimit" value="250"/>
+            <property phpcbf-only="true" name="lineLimit" value="300"/>
             <property name="absoluteLineLimit" value="500"/>
         </properties>
     </rule>
