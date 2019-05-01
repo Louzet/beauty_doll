@@ -89,6 +89,22 @@ db: ## Reset the database
 .PHONY: db
 ################ <logs> #####################
 
+################ <phpcs-checker> #####################
+
+checker:
+	@echo "Run the phpcs checker"
+	$(COMPOSER) cscheck
+.PHONY: checker
+################ <phpcs-checker> #####################
+
+
+################ <phpcs-fixer> #####################
+fixer: 
+	@echo "Run the phpcs-fixer"
+	$(COMPOSER) csfix
+.PHONY: fixer
+################ </phpcs-fixer> #####################
+
 ################ <controller> #####################
 controller:
 	@echo "Creating à new controller :"
